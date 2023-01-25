@@ -8,7 +8,7 @@ const idProperty = idPropertyStr?parseInt(idPropertyStr):null;
 
 console.log(idProperty);
 
-const urlProperty = `http://localhost:3000/properties/${idProperty}`;
+const urlProperty = `https://railways-production-16ef.up.railway.app/properties/${idProperty}`;
 
 const title = document.querySelector(".title");
 

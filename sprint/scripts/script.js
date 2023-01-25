@@ -3,8 +3,8 @@ import deleteDataFetch from "../helpers/deleteData.js";
 import { printProp } from "../modules/printProp.js";
 import postDataFetch from "../helpers/postData.js";
 import { btnFilters } from "../modules/filters.js";
-const urlProperties = "http://localhost:3000/properties";
-const urlFavorites = "http://localhost:3000/favorites";
+const urlProperties = "https://railways-production-16ef.up.railway.app/properties";
+const urlFavorites = "https://railways-production-16ef.up.railway.app/favorites";
 let properties = [];
 
 const propertiesContainer = document.querySelector(".propertiesContainer");
