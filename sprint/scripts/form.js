@@ -3,7 +3,6 @@ import putDataFetch from "../helpers/putdata.js";
 import postDataFetch from "../helpers/postdata.js";
 
 const form = document.querySelector(".form");
-const title = document.querySelector(".title");
 //const urlProperties = "http://localhost:3000/properties";
 
 const urlProperties = "https://railways-production-16ef.up.railway.app/properties";
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
         if (editId) {
         editProperty = await getDataFetch(urlProp);
-        title.innerHTML = editId ? `Edit this property` : `Add a new property`;
         valuesForm.forEach((input) => {
             if (input.id) {
             input.value = editProperty[input.id];
