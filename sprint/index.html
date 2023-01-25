@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Casa Royal</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <div class="top_menu">
+                <p>1441 Market St. San Francisco</p>
+                <p>(123)456-789</p>
+                <p>Mon-Sun:8:00am - 6:00pm</p>
+            </div>
+            <div class="login">
+                <p>LOGIN/REGISTER</p>
+            </div>
+        </section>
+        <nav class="main_menu">
+            <section>
+                <div class="logo">
+                    <figure>
+                        <img src="./images/logo.png" alt="Logo">
+                    </figure>
+                    <h1>casa<b>Royal</b></h1>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><a href="#">HOMEPAGE</a></li>
+                        <li><a href="./pages/form.html">ADD</a></li>
+                        <li><a href="./pages/favorites.html">FAVORITES</a></li>
+                    </ul>
+                </div>
+            </section>
+            <p><a href="./pages/form.html">SUBMIT LISTING</a></p>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="dashboard-text">
+                <h2>Let Us Guide You Home</h2>
+                <p>Find the house of your dreams</p>
+            </div>
+
+            <div class="search">
+                <section class="form">
+                    <input type="search" placeholder=" Search for properties" id="searchInput">
+                    <button >FIND PROPERTIES</button>
+                </section>
+                    <section class="filters">
+                        <button id="all">All</button>
+                        <button id="apartment">Apartment</button>
+                        <button id="house">House</button>
+                    </section>
+                </div>
+        </section>
+
+        <section class="properties-section">
+            <h4>CASAROYAL REAL ESTATE AGENCY</h4>
+            <h2><span>Featured</span> Properties</h2>
+
+            <div class="propertiesContainer">
+                <article class="property">
+                    <figure class="property_img">
+                        <img src="./images/casa_cerritos1.png" alt="Property image" class="property_image">
+                    </figure>
+                    <p class="type">HOUSE</p>
+                    <p class="status">FOR SALE</p>
+                    <p class="price">$3,200,000</p>
+
+                    <div class="property_info">
+                            <p class="location">Beverly Hills, CA</p>
+                            <h4 class="name">272 S Rexford Dr, Beverly Hills, CA 90212, USA</h4>
+                            <p class="owner"> <img src="./images/naomi-hebert-188443-unsplash-1.png" alt=""> Hellen Mattis</p>
+                            <p class="time">5 months ago</p>
+
+                            <div class="subdiv">
+                                <p class="area"><img src="./images/area.png" alt=""><span>2400</span> Sq Ft</p>
+                                <ul>
+                                    <li><img src="./images/car.png" alt="">2</li>
+                                    <li><img src="./images/bathroom.png" alt="">3</li>
+                                    <li><img src="./images/bed.png" alt="">3</li>
+                                </ul>
+                            </div>
+                            <button name="" class="delete">❌</button>
+                            <button name="" class="favorite">📝</button>
+                            <button name="" class="edit">❤</button>
+                        </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./scripts/script.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

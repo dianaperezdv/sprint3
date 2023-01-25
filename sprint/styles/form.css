@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #2a41e8;
+  --orange: #ff5e14;
+  --dark-black: #1d1d1d;
+  --light-black: #4b4d4f;
+  --grey: #848484;
+  --bg-grey: #d7d7d7;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #fafafa;
+}
+
+
+header{
+  background-color: var(--blue);
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  height: 54px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.5rem;
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.menu .top_menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu .top_menu p {
+  margin: 0 0.7rem;
+}
+
+.main_menu {
+  padding: 0;
+  background-color: var(--white);
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_menu section {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.main_menu .logo {
+  display: flex;
+  align-items: center;
+}
+
+.main_menu figure {
+  width: 65px;
+  height: 60px;
+  padding: 0.4rem;
+}
+
+.main_menu h1 {
+  font-size: 1.2rem;
+  color: var(--light-black);
+  margin-left: 0.3rem;
+  padding: 0.4rem 0;
+  font-weight: 200;
+}
+.main_menu h1 b {
+  color: var(--dark-black);
+}
+
+.main_menu ul {
+  margin-left: 2.5rem;
+}
+.main_menu ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 1rem;
+}
+
+.main_menu ul li a {
+  text-decoration: none;
+  color: var(--light-black);
+}
+
+.main_menu ul li a:hover {
+  color: var(--blue);
+}
+
+.main_menu p {
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 1.3rem;
+}
+.title{
+  font-weight:500; 
+  padding-bottom:0.8rem;
+}
+.form{
+  width:40%;
+  text-align: center;
+  margin:0 auto;
+  min-width:300px;
+  padding-bottom:2rem;
+}
+
+.form label,.form input{
+  width:60%;
+  text-align: center;
+  display: block;
+  margin:0.5rem auto;
+  min-width:250px;
+}
+
+.form input{
+  margin-bottom:2rem;
+  border:none;
+  border:1px solid var(--grey);
+  border-radius:4px;
+  height:1.5rem;
+  
+}
+
+.form label{
+  font-size:1.2rem;
+  color:var(--light-dark);
+  font-weight:400;
+}
+
+.form button{
+  border:1px pink;
+  background-color:pink;
+  color:black;
+  width:40%;
+  height:2rem;
+  min-width:250px;
+  font-weight:800;
+  border-radius:0.2rem;
+  font-size:1rem;
+}
+
+.form button:hover{
+  background-color:#fafafa;
+  border:1.5px solid red;
+  color:var(--orange);
+  cursor:pointer;
+}

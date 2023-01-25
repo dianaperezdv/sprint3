@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #2a41e8;
+  --orange: #ff5e14;
+  --dark-black: #1d1d1d;
+  --light-black: #4b4d4f;
+  --grey: #848484;
+  --bg-grey: #d7d7d7;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #fafafa;
+}
+
+
+header{
+  background-color: var(--blue);
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  height: 54px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.5rem;
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.menu .top_menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu .top_menu p {
+  margin: 0 0.7rem;
+}
+
+.main_menu {
+  padding: 0;
+  background-color: var(--white);
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_menu section {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.main_menu .logo {
+  display: flex;
+  align-items: center;
+}
+
+.main_menu figure {
+  width: 65px;
+  height: 60px;
+  padding: 0.4rem;
+}
+
+.main_menu h1 {
+  font-size: 1.2rem;
+  color: var(--light-black);
+  margin-left: 0.3rem;
+  padding: 0.4rem 0;
+  font-weight: 200;
+}
+.main_menu h1 b {
+  color: var(--dark-black);
+}
+
+.main_menu ul {
+  margin-left: 2.5rem;
+}
+.main_menu ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 1rem;
+}
+
+.main_menu ul li a {
+  text-decoration: none;
+  color: var(--light-black);
+}
+
+.main_menu ul li a:hover {
+  color: var(--blue);
+}
+
+.main_menu p {
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 1.3rem;
+}
+
+main .dashboard {
+  background-image: url("../images/index_fondo_buscador.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.dashboard .dashboard-text h2 {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--white);
+  top: calc(50% - 50px / 2 - 149.5px);
+  left: 13.08%;
+}
+.dashboard .dashboard-text p {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+  top: calc(50% - 21px / 2 - 90px);
+  left: 13.08%;
+}
+.search{
+  position: absolute;
+  left: 13.08%;
+  top: 44.34%;
+  background-color: var(--white);
+  width: 75%;
+  padding:1rem;
+}
+.form {
+  height: 100px;
+  padding: 2rem 1rem ;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+.form input {
+  padding: 10px;
+  width: 456px;
+  height: 60px;
+  background: #ECECEC;
+  border-radius: 5px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+}
+
+.form button {
+  font-family: 'Rubik';
+  background-color: var(--orange);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 0.7rem;
+  color: white;
+  position:relative;
+  padding:0.2rem;
+  text-decoration: none;
+}
+.form button:hover{
+  cursor:pointer;
+}
+.filters{
+  display:flex;
+  justify-content: center;
+  gap:1rem;
+}
+
+.filters button{
+  border:1px solid var(--blue);
+  width:9%;
+  border-radius: 4px;
+  height:1.5rem;
+  background-color: var(--white);
+  min-width:80px;
+}
+.filters button:hover{
+  border:1px solid var(--blue);
+  background-color: var(--blue);
+  color:var(--white);
+  cursor:pointer;
+}
+
+.properties-section {
+  margin-top: 6rem;
+}
+.properties-section h4 {
+  text-align: center;
+  color: var(--grey);
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.properties-section h2 {
+  text-align: center;
+  color: var(--dark-black);
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.properties-section h2 span {
+  font-weight: 300;
+}
+.properties-section .propertiesContainer {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.category{
+  font-weight: 600;
+}
+.properties-section .propertiesContainer .property {
+  width: 398px;
+  height: 519px;
+  border-radius: 4px;
+  position: relative;
+  background-color: var(--white);
+  margin: 1rem 0.5rem;
+}
+.property .propert_img {
+  height: 278px;
+  width: 398px;
+  background-size: cover;
+  position: absolute;
+}
+
+.property .property_img:hover{
+  cursor:pointer;
+}
+.property .property_img img {
+  height: 278px;
+  width: 398px;
+}
+
+.property .price,
+.property .status,
+.property .type {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.property .type {
+  color: var(--white);
+  background-color: var(--blue);
+  width: 92px;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.property .status {
+  color: var(--white);
+  background-color: var(--orange);
+  width: 78px;
+  position: absolute;
+  left: 7.4rem;
+  top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.property .price {
+  color: var(--blue);
+  background-color: var(--white);
+  width: 128px;
+  position: absolute;
+  left: 1.5rem;
+  top: 42%;
+  
+}
+.property .property_info {
+  padding: 0 1.5rem;
+}
+.property .property_info .location {
+  color: var(--grey);
+  font-weight: 400;
+  margin-left: 2rem;
+  font-size: 14px;
+  margin-top: 0.8rem;
+  line-height: 16.59px;
+}
+.property .property_info .name {
+  color: var(--dark-black);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.property .property_info .owner {
+  color: var(--blue);
+  font-size: 15px;
+}
+.property .property_info .owner img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.property .property_info .time {
+  color: var(--grey);
+  font-weight: 400;
+  position: absolute;
+  top: calc(76% - 17px / 2);
+  right: 7.64%;
+  font-size: 14px;
+}
+.property .property_info .subdiv {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bg-grey);
+  display: flex;
+  justify-content: space-between;
+}
+.property .property_info .subdiv ul li {
+  list-style: none;
+  width: 31px;
+  height: 19px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark-black);
+  margin-left: 1rem;
+}
+.property .property_info .subdiv ul li img,
+.property .property_info .subdiv .area img {
+  width: 14px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.property .property_info .subdiv .area {
+  font-size: 16px;
+  height: 19px;
+}
+.property .property_info .subdiv .area span {
+  font-weight: 500;
+  color:#ff5e14
+}
+
+.property .delete,
+.property .edit,
+.property .favorite {
+  display: none;
+  position: absolute;
+  border: none;
+  padding: none;
+  background: none;
+  width: 25px;
+  height: 25px;
+}
+.property:hover .delete,
+.property:hover .favorite,
+.property:hover .edit {
+  display: block;
+  cursor: pointer;
+}
+
+.property .delete {
+  right: 5%;
+  bottom: 39%;
+}
+
+.property .favorite {
+  right: 5%;
+  top: 5%;
+}
+
+.property .edit {
+  right: 15%;
+  bottom:39%;
+}
+
+@media (max-width:765px){
+  .filters{
+    justify-content: flex-start;
+    overflow-x:scroll;
+    padding:0 1rem;
+  }
+  .navbar .options ul {
+    margin:0 auto;
+    width:100%;
+    min-width:300px;
+    text-align: center;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+  .navbar section, .navbar p{
+    width:100%;
+  }
+
+}
+
+@media (max-width:570px){
+  .header_contact{
+    height: 74px;
+   
+  }
+  .header_contact .contact_info {
+    flex-direction:column;
+    padding:0.2rem;
+  }
+  .header_contact .contact_info p{
+    margin:0.2rem 0;
+  }
+  .navbar section{
+    flex-direction:column;
+    padding:0.7rem;
+  }
+  .title{
+    text-align:center;
+    margin-bottom:0.5rem;
+  }
+  .navbar p{
+    text-align:center;
+  }
+  .dashboard .dashboard-text p {
+    top: calc(74% - 21px / 2 - 90px);
+    
+  }
+  .search{
+    top: 64.34%;
+   
+  }
+  .form {
+    flex-direction: column;
+    padding:0;
+  }
+
+  .form input, .form button{
+    width:100%;
+    margin-bottom:1rem;
+  }
+  .form button{
+    height:1.5rem;
+  }
+
+  .property .property_img img{
+    max-width:310px;
+    height:255px;
+  }
+}
