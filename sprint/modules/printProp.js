@@ -24,8 +24,8 @@ export const printProp = (container, array) => {
                     </ul>
                 </div>
                 <button name="${property.id}" class="delete">❌</button>
-                <button name="${property.id}" class="favorite">📝</button>
-                <button name="${property.id}" class="edit">❤</button>
+                <button name="${property.id}" class="favorite">❤</button>
+                <button name="${property.id}" class="edit">📝</button>
             
             </div>
             `;
