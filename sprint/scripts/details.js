@@ -7,6 +7,7 @@ const idPropertyStr = sessionStorage.getItem("propertyDetails")?JSON.parse(sessi
 const idProperty = idPropertyStr?parseInt(idPropertyStr):null;
 
 console.log(idProperty);
+//const urlProperties = `http://localhost:3000/properties/${idProperty}`;"
 
 const urlProperty = `https://railways-production-16ef.up.railway.app/properties/${idProperty}`;
 

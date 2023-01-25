@@ -4,6 +4,7 @@ import postDataFetch from "../helpers/postdata.js";
 
 const form = document.querySelector(".form");
 const title = document.querySelector(".title");
+//const urlProperties = "http://localhost:3000/properties";
 
 const urlProperties = "https://railways-production-16ef.up.railway.app/properties";
 
